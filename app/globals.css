@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+::selection {
+  background: #c99b48;
+  color: #15130f;
+}
+
+.hero-image {
+  background-image:
+    linear-gradient(90deg, rgba(21, 19, 15, 0.92) 0%, rgba(21, 19, 15, 0.66) 42%, rgba(21, 19, 15, 0.18) 100%),
+    url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=2200&q=85");
+}
+
+.grain {
+  background-image:
+    radial-gradient(circle at 20% 15%, rgba(201, 155, 72, 0.12), transparent 32%),
+    linear-gradient(135deg, rgba(255, 250, 241, 0.98), rgba(247, 239, 224, 0.9));
+}
+
+.section-label {
+  @apply text-xs font-semibold uppercase tracking-[0.28em] text-copper;
+}
+
+.container-pad {
+  @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+}
+
+.field {
+  @apply w-full rounded-none border border-black/15 bg-white/80 px-4 py-3 text-sm text-ink outline-none transition focus:border-gold focus:ring-2 focus:ring-gold/30;
+}
+
+.button-primary {
+  @apply inline-flex min-h-12 items-center justify-center gap-2 bg-gold px-6 py-3 text-sm font-bold uppercase tracking-[0.16em] text-ink transition hover:bg-cream focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-ink;
+}
+
+.button-secondary {
+  @apply inline-flex min-h-12 items-center justify-center gap-2 border border-cream/60 px-6 py-3 text-sm font-bold uppercase tracking-[0.16em] text-cream transition hover:border-gold hover:bg-gold hover:text-ink focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-ink;
+}
