@@ -1,4 +1,4 @@
-# Restaurant Website Demo
+# Modern Restaurant Website Demo
 
 ## Project Overview
 
