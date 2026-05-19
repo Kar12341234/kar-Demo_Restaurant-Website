@@ -19,18 +19,18 @@ body {
 
 .hero-image {
   background-image:
-    linear-gradient(90deg, rgba(21, 19, 15, 0.92) 0%, rgba(21, 19, 15, 0.66) 42%, rgba(21, 19, 15, 0.18) 100%),
-    url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=2200&q=85");
+    linear-gradient(90deg, rgba(21, 19, 15, 0.96) 0%, rgba(21, 19, 15, 0.74) 43%, rgba(21, 19, 15, 0.2) 100%),
+    url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=2200&q=88");
 }
 
 .grain {
   background-image:
-    radial-gradient(circle at 20% 15%, rgba(201, 155, 72, 0.12), transparent 32%),
-    linear-gradient(135deg, rgba(255, 250, 241, 0.98), rgba(247, 239, 224, 0.9));
+    radial-gradient(circle at 18% 18%, rgba(201, 155, 72, 0.14), transparent 28%),
+    linear-gradient(135deg, rgba(255, 250, 241, 0.99), rgba(247, 239, 224, 0.92));
 }
 
 .section-label {
-  @apply text-xs font-semibold uppercase tracking-[0.28em] text-copper;
+  @apply text-xs font-bold uppercase tracking-[0.26em] text-copper;
 }
 
 .container-pad {
@@ -38,13 +38,35 @@ body {
 }
 
 .field {
-  @apply w-full rounded-none border border-black/15 bg-white/80 px-4 py-3 text-sm text-ink outline-none transition focus:border-gold focus:ring-2 focus:ring-gold/30;
+  @apply w-full border border-black/10 bg-linen px-4 py-3 text-sm text-ink outline-none transition placeholder:text-black/40 focus:border-gold focus:bg-white focus:ring-2 focus:ring-gold/30;
 }
 
 .button-primary {
-  @apply inline-flex min-h-12 items-center justify-center gap-2 bg-gold px-6 py-3 text-sm font-bold uppercase tracking-[0.16em] text-ink transition hover:bg-cream focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-ink;
+  @apply inline-flex min-h-12 items-center justify-center gap-2 bg-gold px-6 py-3 text-center text-sm font-bold uppercase tracking-[0.15em] text-ink transition hover:bg-cream focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-ink;
 }
 
 .button-secondary {
-  @apply inline-flex min-h-12 items-center justify-center gap-2 border border-cream/60 px-6 py-3 text-sm font-bold uppercase tracking-[0.16em] text-cream transition hover:border-gold hover:bg-gold hover:text-ink focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-ink;
+  @apply inline-flex min-h-12 items-center justify-center gap-2 border border-cream/60 px-6 py-3 text-center text-sm font-bold uppercase tracking-[0.15em] text-cream transition hover:border-gold hover:bg-gold hover:text-ink focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-ink;
+}
+
+.button-outline {
+  @apply inline-flex min-h-10 items-center justify-center border border-cream/50 px-5 py-2 text-sm font-semibold transition hover:border-gold hover:bg-gold hover:text-ink focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-ink;
+}
+
+.menu-panel {
+  @apply border border-cream/10 bg-white/5 p-6 shadow-2xl transition hover:border-gold/30 sm:p-8;
+}
+
+.reservation-form {
+  background-image: linear-gradient(180deg, rgba(255, 250, 241, 0.9), rgba(255, 255, 255, 1));
+}
+
+.review-card {
+  @apply border border-black/10;
+}
+
+.map-panel {
+  background-image:
+    radial-gradient(circle at center, rgba(201, 155, 72, 0.2), transparent 34%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
 }
